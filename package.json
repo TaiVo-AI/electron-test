@@ -1,6 +1,6 @@
 {
   "name": "minimal-repro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -20,5 +20,12 @@
   "devDependencies": {
     "electron": "^40.7.0",
     "electron-builder": "^26.8.1"
+  },
+  "build": {
+  "appId": "com.example.app",
+  "productName": "ElectronApp",
+  "win": {
+    "target": "nsis"
   }
+}
 }
